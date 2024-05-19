@@ -1,0 +1,425 @@
+section#Biografia{
+    box-sizing: border-box;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 2.5%;
+}
+    section#Biografia img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        border-radius: 100px;
+    }
+    section#Biografia h1{
+        color: darkblue;
+        text-align: center;
+    }
+
+h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkblue;
+}
+
+hr{
+    width: 75%;
+}
+
+section#ExperienciasProfissionais{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 75%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto;
+    padding: 2.5%;
+}
+    section#ExperienciasProfissionais h2{
+        color: darkblue;
+        text-align: center;
+    }
+    section#ExperienciasProfissionais .DPRF{
+        width: 49%;
+        margin: 0.5%;
+        text-align: justify;
+    }
+    section#ExperienciasProfissionais .CMP{
+        width: 49%;
+        margin: 0.5%;
+        text-align: justify;
+    }
+    section#ExperienciasProfissionais .PMP{
+        width: 49%;
+        margin:0.5%;
+        text-align: justify;
+    }
+    section#ExperienciasProfissionais .IBGE{
+        width: 49%;
+        margin: 0.5%;
+        text-align: justify;
+    }
+
+    .título{
+        text-align: center;
+    }
+    .dadosProfissão{
+        text-align: center;
+    }
+
+section#ExperienciasAcademicas{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    clear: both;
+    width: 75%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2.5%;
+}
+    section#ExperienciasAcademicas h2{
+        color: darkblue;
+        text-align: center;
+    }
+    .IFMT{
+        width: 32.3%;
+        margin: 0.5%;
+        display: inline-block;
+        text-align: center;
+    }
+    .UNEMAT{
+        width: 32.3%;
+        margin: 0.5%;
+        display: inline-block;
+        text-align: center;
+
+    }
+    .UNP{
+        width: 32.3%;
+        margin: 0.5%;
+        display: inline-block;
+        text-align: center;
+
+    }
+
+section#SoftHardSkills{
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 75%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2.5%;
+}
+    
+    #SoftHardSkills h2{
+        color: darkblue;
+        text-align: center;
+    }
+    #SoftHardSkills h3{
+        text-align: center;
+    }
+    #SoftHardSkills #OutrosCursos{
+        text-align: justify;
+        width: 49%;
+        margin: 0.5%;
+    }
+    #SoftHardSkills #Programação{
+        text-align: justify;
+        width: 49%;
+        margin: 0.5%;
+    }
+    #SoftHardSkills #HardSkills{
+        text-align: justify;
+        width: 49%;
+        margin: 0.5%;
+    }
+    #SoftHardSkills #SoftSkills{
+        text-align: justify;
+        width: 49%;
+        margin: 0.5%;
+    }
+    #SoftHardSkills ol{
+        counter-set: none;
+    }
+footer{
+    width: 75%;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+footer a{
+    font-size: 30px;
+    text-decoration: none;
+}
+
+/*Abaixo utilizei Media-Queries para uma resolução de Notebook usual/comum. Única alteração feita foi o aumento da dimensão de todo o conteúdo de 75% da página para 85%.*/
+
+@media (max-width: 1024px) {
+    section#Biografia{
+        box-sizing: border-box;
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: justify;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 2.5%;
+    }
+    hr{
+        width: 85%;
+    }
+    section#ExperienciasProfissionais{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 85%;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: auto;
+        padding: 2.5%;
+    }
+    section#ExperienciasAcademicas{
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        clear: both;
+        width: 85%;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 2.5%;
+    }
+    section#SoftHardSkills{
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 85%;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 2.5%;
+    }
+    footer{
+        width: 85%;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}
+
+/*Abaixo utilizei Media Queries para um padrão de Max-Width de 768px, ou seja, padrão de "TABLET". As alterações realizadas foram o aumento do tamanho do conteúdo de 85%
+da tela p/ 98%. Assim sendo possível manter a mesma disposição de layout utilizada em Notbook usual/comum, com alteração apenas na section de "experiências Acadêmicas.
+Uma vez que nessa section havima 3 Divs alinhadas em linha com utilização de flex-box (33% de tamanho para cada DIV), aumentei então o tamanho das DIVS para 48%, ficando 
+apenas duas divs na mesma linha e a terceira logo abaixo. Optei por fazer desta forma por questões de economia de código.*/
+
+@media (max-width: 768px) {
+    section#Biografia{
+        box-sizing: border-box;
+        width: 98%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: justify;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 2.5%;
+    }
+    hr{
+        width: 98%;
+    }
+    section#ExperienciasProfissionais{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 98%;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: auto;
+        padding: 2.5%;
+    }
+    section#ExperienciasAcademicas{
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        clear: both;
+        width: 98%;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 2.5%;
+    }
+        .IFMT{
+            width: 49%;
+            margin: 0.5%;
+            display: inline-block;
+            text-align: center;
+        }
+        .UNEMAT{
+            width: 49%;
+            margin: 0.5%;
+            display: inline-block;
+            text-align: center;
+
+        }
+        .UNP{
+            width: 49%;
+            margin: 0.5%;
+            display: inline-block;
+            text-align: center;
+
+        }
+    section#SoftHardSkills{
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 98%;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 2.5%;
+    }
+    footer{
+        width: 98%;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}
+
+/*
+Abaixo utilizei Media-Queries para uma resolução de smartphone-Larger (425px) pois também serve para a resolução de 375px (Smartphone-Medium). Optei por finalizar a 
+responsividade do site com esta resolução por questões de economia de código, uma vez que atualmente é muito pouco utilizado smartphones com resoluções inferiores a 375px 
+(Smartphone-Medium). As seguintes alterações foram feitas:
+
+1. Todas as DIVs de todas as Sections do código passaram a ocupar 99% do espaço de largura da Section.
+2. O Footer passou a ter ícones de 20px ao invés de 30px como era anteriormente.
+3. Os textos do footer passaram a ter tamanho "small".
+*/
+
+@media (max-width: 425px) {
+
+    section#Biografia{
+        box-sizing: border-box;
+        width: 98%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: justify;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 2.5%;
+    }
+    
+    section#ExperienciasProfissionais{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 98%;
+        font-family: Arial, Helvetica, sans-serif;
+        margin: auto;
+        padding: 2.5%;
+    }
+        section#ExperienciasProfissionais .DPRF{
+            width: 99%;
+            margin: 0.5%;
+            text-align: justify;
+        }
+        section#ExperienciasProfissionais .CMP{
+            width: 99%;
+            margin: 0.5%;
+            text-align: justify;
+        }
+        section#ExperienciasProfissionais .PMP{
+            width: 99%;
+            margin:0.5%;
+            text-align: justify;
+        }
+        section#ExperienciasProfissionais .IBGE{
+            width: 99%;
+            margin: 0.5%;
+            text-align: justify;
+        }
+
+    section#ExperienciasAcademicas{
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        clear: both;
+        width: 98%;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 2.5%;
+    }
+        .IFMT{
+            width: 99%;
+            margin: 0.5%;
+            display: inline-block;
+            text-align: center;
+        }
+        .UNEMAT{
+            width: 99%;
+            margin: 0.5%;
+            display: inline-block;
+            text-align: center;
+    
+        }
+        .UNP{
+            width: 99%;
+            margin: 0.5%;
+            display: inline-block;
+            text-align: center;
+    
+        }
+    
+    section#SoftHardSkills{
+        display: flex;
+        flex-wrap: wrap;
+        box-sizing: border-box;
+        width: 98%;
+        font-family: Arial, Helvetica, sans-serif;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 2.5%;
+    }
+        #SoftHardSkills #OutrosCursos{
+            text-align: justify;
+            width: 99%;
+            margin: 0.5%;
+        }
+        #SoftHardSkills #Programação{
+            text-align: justify;
+            width: 99%;
+            margin: 0.5%;
+        }
+        #SoftHardSkills #HardSkills{
+            text-align: justify;
+            width: 99%;
+            margin: 0.5%;
+        }
+        #SoftHardSkills #SoftSkills{
+            text-align: justify;
+            width: 99%;
+            margin: 0.5%;
+        }
+
+    footer{
+        width: 98%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: small;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    footer a{
+        font-size: 20px;
+        text-decoration: none;
+    }
+
+}

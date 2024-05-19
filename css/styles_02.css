@@ -1,0 +1,5 @@
+body form{
+    display: flexbox;
+    width: 75%;
+    margin: auto;
+}
