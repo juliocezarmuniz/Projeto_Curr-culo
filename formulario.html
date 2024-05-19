@@ -6,20 +6,18 @@
     <title>Formulário</title>
     <link rel="Stylesheet" type="text/css" href="css/styles_02.css" media="screen">
 </head>
-<body>
-    <form action="" method="">
-        <div>
-            <label for="nome">Nome</label>
-            <input type="text" id="nome">
-        </div>
-        <div>
-            <label for="E-mail">E-mail</label>
-            <input type="text" id="E-mail">
-        </div>
-        <div>
-            <label for="Mensagem">Mensagem</label>
-            <input type="text">
-        </div>
+<body style="display: block; width: 75%; margin: auto;">
+    <form action="./Index.html" method="">
+        <label for="Nome" style="display: block; width: 50%; margin: auto;">Nome</label>
+        <input type="text" id="nome" placeholder="Insira seu nome" style="display: block; width: 50%; margin: auto;">
+
+        <label for="E-mail" style="display: block; width: 50%; margin: auto;">E-mail</label>
+        <input type="email" id="E-mail" placeholder="Insira um E-mail válido" style="display: block; width: 50%; margin: auto;">
+
+        <label for="Mensagem" style="display: block; width: 50%; margin: auto;">Mensagem</label>
+        <input type="text" id="mensagem" placeholder="Escreva a mensagem que deseja enviar" style="display: block; width: 50%; margin: auto;">
     </form>
+    <br>
+    <button style=" display: block; margin: auto;"><a href="Index.html">Voltar</a></button>
 </body>
 </html>
